@@ -14,7 +14,6 @@ const API_KEY = process.env.API_KEY;
 
 // Base URL for On-Demand API
 const BASE_URL = "https://api.on-demand.io/automation/api/workflow";
-
 // Base headers
 const axiosHeaders = {
     "Content-Type": "application/json",
@@ -23,12 +22,12 @@ const axiosHeaders = {
 
 /**
  * Endpoint: Infra Flow
- * Workflow ID: 696a7a758e6b21cb8aea4d2b
+ * Workflow ID: 696c69c5c28c63108ddba588
  */
 app.post("/infra-flow", async (req, res) => {
     try {
         const response = await axios.post(
-            `${BASE_URL}/696a7a758e6b21cb8aea4d2b/execute`,
+            `${BASE_URL}/696c69c5c28c63108ddba588/execute`,
             req.body,
             { headers: axiosHeaders }
         );
@@ -45,12 +44,12 @@ app.post("/infra-flow", async (req, res) => {
 
 /**
  * Endpoint: Network Flow
- * Workflow ID: 696a773d8e6b21cb8aea4c99
+ * Workflow ID: 696c6e5c8e6b21cb8aea89af
  */
 app.post("/network-flow", async (req, res) => {
     try {
         const response = await axios.post(
-            `${BASE_URL}/696a773d8e6b21cb8aea4c99/execute`,
+            `${BASE_URL}/696c6e5c8e6b21cb8aea89af/execute`,
             req.body,
             { headers: axiosHeaders }
         );
@@ -67,12 +66,12 @@ app.post("/network-flow", async (req, res) => {
 
 /**
  * Endpoint: Auth Flow
- * Workflow ID: 696a7acf8e6b21cb8aea4d56
+ * Workflow ID: 696c6f44c28c63108ddba631
  */
 app.post("/auth-flow", async (req, res) => {
     try {
         const response = await axios.post(
-            `${BASE_URL}/696a7acf8e6b21cb8aea4d56/execute`,
+            `${BASE_URL}/696c6f44c28c63108ddba631/execute`,
             req.body,
             { headers: axiosHeaders }
         );
